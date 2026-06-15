@@ -10,6 +10,7 @@ import { HomeComponentComponent } from './home-component/home-component.componen
 import { FooterComponentComponent } from './footer-component/footer-component.component';
 import { NavBarComponentComponent } from './nav-bar-component/nav-bar-component.component';
 import { provideHttpClient } from '@angular/common/http';
+import { AlbumComponent } from './album/album.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { provideHttpClient } from '@angular/common/http';
     StickerComponent,
     HomeComponentComponent,
     FooterComponentComponent,
-    NavBarComponentComponent
+    NavBarComponentComponent,
+    AlbumComponent
   ],
   imports: [
     BrowserModule,

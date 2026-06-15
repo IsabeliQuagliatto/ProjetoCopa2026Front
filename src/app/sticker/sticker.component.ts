@@ -1,6 +1,7 @@
 import { Component, OnInit, signal } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Sticker } from '../sticker';
+import { StickerService } from '../sticker.service';
 
 @Component({
   selector: 'app-sticker',
@@ -14,7 +15,8 @@ export class StickerComponent implements OnInit {
   stickers = signal<Sticker[]>([]);
   isEditing: boolean = false;
 
-  constructor(private formBuilder: FormBuilder, private service: StickerService) {
+  constructor(private formBuilder: FormBuilder,
+              private service: StickerService) {
 
     this.formGroupSticker = formBuilder.group({
       id: [''],
@@ -59,12 +61,17 @@ export class StickerComponent implements OnInit {
     )
   }
 
+  onClickUpdate(sticker: Sticker) {
+     this.formGroupSticker.setValue(sticker);
+      this.isEditing = true;
+  }
+
   //Put
   update() {
 this.service.update(this.formGroupSticker.value).subscribe(
         {
           next: json => {
-            this.stickers.update(stickers => stickers.map(s=> s.id === json.id ? json : s));
+            this.stickers.update(stickers => stickers.map(s => s.id === json.id ? json : s));
             this.isEditing = false;
             this.formGroupSticker.reset();
           }

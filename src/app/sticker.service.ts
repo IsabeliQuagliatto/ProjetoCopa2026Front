@@ -7,13 +7,13 @@ import { Sticker } from './sticker';
   providedIn: 'root'
 })
 
-export class StickerServiceService {
+export class StickerService {
   apiUrl = "http://localhost:3000/stickers";
 
   constructor(private http: HttpClient) { }
 
   //Get All
-  getAllProducts(): Observable<Sticker[]>{
+  getAllStickers(): Observable<Sticker[]>{
     return this.http.get<Sticker[]>(this.apiUrl);
   }
 

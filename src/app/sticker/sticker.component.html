@@ -33,11 +33,10 @@
     <button *ngIf="isEditing"   type="submit" class="btn btn-primary"  (click)="update()">Atualizar</button>
 </form>
 
-  total de figurinhas: {{stickers.length}}
-
   <table class="table">
     <thead>
       <tr>
+        <th scope="col">#</th>
         <th scope="col">Nome</th>
         <th scope="col">Time</th>
         <th scope="col">Tipo</th>
@@ -47,6 +46,7 @@
     </thead>
     <tbody>
       <tr *ngFor="let s of stickers()">
+        <th scope="row">{{ s.id }}</th>
         <td>{{s.name}}</td>
         <td>{{s.team}}</td>
         <td>{{s.type}}</td>

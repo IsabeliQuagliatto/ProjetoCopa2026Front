@@ -6,11 +6,17 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ReactiveFormsModule } from '@angular/forms';
 import { StickerComponent } from './sticker/sticker.component';
+import { HomeComponentComponent } from './home-component/home-component.component';
+import { FooterComponentComponent } from './footer-component/footer-component.component';
+import { NavBarComponentComponent } from './nav-bar-component/nav-bar-component.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    StickerComponent
+    StickerComponent,
+    HomeComponentComponent,
+    FooterComponentComponent,
+    NavBarComponentComponent
   ],
   imports: [
     BrowserModule,

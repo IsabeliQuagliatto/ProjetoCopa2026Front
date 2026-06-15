@@ -9,6 +9,7 @@ import { StickerComponent } from './sticker/sticker.component';
 import { HomeComponentComponent } from './home-component/home-component.component';
 import { FooterComponentComponent } from './footer-component/footer-component.component';
 import { NavBarComponentComponent } from './nav-bar-component/nav-bar-component.component';
+import { provideHttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,11 @@ import { NavBarComponentComponent } from './nav-bar-component/nav-bar-component.
     NgbModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+    provideHttpClient()],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
+
+

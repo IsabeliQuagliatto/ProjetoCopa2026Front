@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, computed, signal } from '@angular/core';
 import { StickerService } from '../sticker.service';
 import { Sticker } from '../sticker';
 

@@ -1,0 +1,44 @@
+.display-4 {
+  color: #865de6;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estrutura Geral da Tabela */
+.table {
+  background-color: #ffffff;
+  border: 3px solid #91dff7; /* Borda azul claro combinando com os inputs */
+  border-radius: 12px;
+  overflow: hidden; /* Garante que os cantos fiquem arredondados */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  margin-top: 20px;
+}
+
+/* Cabeçalho da Tabela (Preto com Texto Branco) */
+.table thead th {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 14px;
+  border: none;
+  text-align: center; /* Centraliza os títulos */
+}
+
+/* Linhas e Células de Dados (Texto Centralizado) */
+.table td, .table tbody th {
+  color: #000000;
+  font-weight: 600;
+  vertical-align: middle;
+  text-align: center; /* Centraliza as informações dos jogadores */
+  padding: 14px;
+  border-bottom: 1px solid #91dff7;
+}
+
+/* Efeito visual ao passar o mouse nas linhas */
+.table tbody tr:hover {
+  background-color: rgba(45, 216, 228, 0.1); /* Destaca a linha com um azul bem clarinho */
+  transition: background-color 0.2s ease;
+}

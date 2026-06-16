@@ -1,0 +1,83 @@
+/* Paleta de Cores da Copa 2026 */
+:root {
+  --copa-vinho: #56042C;  /* Vinho oficial */
+  --copa-ouro: #A37A3E;   /* Dourado Legends */
+  --copa-cinza: #7F7F7F;
+  --fundo-suave: #F5F4F0; /* Cor de papel de página de álbum */
+}
+
+
+/* Centraliza a janela vertical e horizontalmente na tela inteira */
+.home-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  background-color: #529c30;
+}
+
+/* Caixa Principal de Boas-Vindas */
+.welcome-box {
+  background-color: #8df547;
+  border: 9px solid var(--copa-ouro);
+  border-radius: 20px;
+  padding: 50px 30px;
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+}
+
+/* Detalhe do ano no topo da caixinha */
+.copa-year {
+  color: #fffc57;
+  font-weight: 900;
+  font-size: 5rem;
+  display: inline-block;
+  padding: 4px 16px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+/* Título Principal */
+.welcome-box h1 {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+/* Descrição */
+.welcome-box p {
+  color: #555555;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 35px;
+}
+
+/* Botão de Entrada Estilo Copa */
+.btn-copa {
+  background-color: var(--copa-vinho);
+  color: #56042C;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  padding: 12px 35px;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Efeito ao passar o mouse no botão */
+.btn-copa:hover {
+  background-color: #ff9999; /* Escurece o vermelho clarinho sutilmente ao passar o mouse */
+  color: #56042C;
+  border-color: #56042C;     /* Cria a bordinha vinho ao passar o mouse */
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(86, 4, 44, 0.2);
+}

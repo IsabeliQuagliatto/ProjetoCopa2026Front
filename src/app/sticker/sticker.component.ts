@@ -68,7 +68,7 @@ export class StickerComponent implements OnInit {
 
   //Put
   update() {
-this.service.update(this.formGroupSticker.value).subscribe(
+  this.service.update(this.formGroupSticker.value).subscribe(
         {
           next: json => {
             this.stickers.update(stickers => stickers.map(s => s.id === json.id ? json : s));

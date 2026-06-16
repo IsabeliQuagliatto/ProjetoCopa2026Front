@@ -8,7 +8,7 @@ import { Sticker } from './sticker';
 })
 
 export class StickerService {
-  apiUrl = "http://localhost:3000/stickers";
+  apiUrl = "http://localhost:8080/stickers";
 
   constructor(private http: HttpClient) { }
 
